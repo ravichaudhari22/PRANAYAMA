@@ -7,7 +7,7 @@ session_start(); ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Final Project</title>
+  <title>PARNAYAMA</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
@@ -33,42 +33,45 @@ session_start(); ?>
         <nav>
           <nav>
             <div class="wrapper">
-              <ul>
-                <li><a   href="index.php">Home</li>
+              <ul style="margin: 0px -70px">
+                <li><a   href="home2.php">Home</li>
+
+                <li><a   href="calendar.php">Upcoming Event</li>
 
                 <li><a style="font-size:18px"> Recipies</a>
                   <ul>
-                    <li><a style="font-size:18px" href="Vegan.html">Vegan</a></li>
-                    <li><a style="font-size:18px" href="veg.html">Vegetarian</a></li>
-                    <li><a style="font-size:18px" href="nonveg.html">Non Vegetarian</a></li>
+                    <li><a style="font-size:18px" href="Vegan.php">Vegan</a></li>
+                    <li><a style="font-size:18px" href="vegetarian.php">Vegetarian</a></li>
+                    <li><a style="font-size:18px" href="non-veg.php">Non Vegetarian</a></li>
                   </ul>
                   <li><a style="font-size:18px"> Workouts</a>
                     <ul>
-                      <li><a style="font-size:18px" href="yoga.html">Yoga</a></li>
-                      <li><a style="font-size:18px" href="yoga.html">Meditation</a></li>
-                      <li><a style="font-size:18px" href="yoga.html">Liftig</a></li>
+                      <li><a style="font-size:18px" href="new.php">Yoga</a></li>
+                      <li><a style="font-size:18px" href="med.php">Meditation</a></li>
+                      <li><a style="font-size:18px" href="lift.php">Liftig</a></li>
 
                     </ul>
-                
 
-                    <li><a style="font-size:18px;float:right; "href="aboutus.html">About us</a></li>
-                    <div class="topnav">
+                      <li><a style="font-size:18px" href="donateafter.php">Donations</a></li>
+                        <li><a style="font-size:18px" href="Products.php">Products</a></li>
+
+                    <li><a style="font-size:18px "href="aboutus.html">About us</a></li>
+                  <li style="float:right;margin:-31px">  <div class="topnav">
   <a href="" >ACCOUNTS</a>
 
   <div id="member">
-    <a href="Aftersign.php"><?php echo $_SESSION['user'];?></a>
+    <a href="profile.php"><?php echo $_SESSION['user'];?></a>
 
-    <a href="register.html">CANCEL MEMBERSHIP</a>
-
+    <a href="Cancel.php">CANCEL MEMBERSHIP</a>
+  </div>
     <a href="javascript:void(1);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
-    </div>
+</li>
 
 
 
-
-
+<li>
         <button id="hamburger-menu">
           <span class="strip"></span>
           <span class="strip"></span>
@@ -77,28 +80,42 @@ session_start(); ?>
       </div>
     </div>
       </div>
+</li>
+
     </header>
 
     <div id="hero-slider">
-      <div class="hero-slide-item" style="background-image:url('bg1.jpg');">
+      <div class="hero-slide-item" ">
         <div class="hero-slider-marketing">
-          <a href="https://www.youtube.com/watch?v=oq6j9uWrcfg" class="youtube-button"><span class="fa fa-play"></span></a>
+          <video width="1500px" height="1000px" style="margin: -200px " controls muted autoplay>
+            <source src="homev1.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+          </video></span></a>
 
 
         </div>
       </div>
 
-      <div class="hero-slide-item" style="background-image:url('bg2.jpg');">
+      <div class="hero-slide-item" ">
         <div class="hero-slider-marketing">
-          <a href="https://www.youtube.com/watch?v=5z7c7NdcH7I" class="youtube-button"><span class="fa fa-play"></span></a>
+          <video width="1500px" height="1000px" style="margin: -200px " controls muted autoplay>
+            <source src="hv.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+          </video></span></a>
 
 
         </div>
       </div>
 
-      <div class="hero-slide-item" style="background-image:url('bg3.jpg');">
+      <div class="hero-slide-item" ">
         <div class="hero-slider-marketing">
-          <a href="https://www.youtube.com/watch?v=82slwrFOAGo" class="youtube-button"><span class="fa fa-play"></span></a>
+          <video width="1500px" height="1000px" style="margin: -200px " controls muted autoplay>
+            <source src="hvv.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+          </video></span></a>
 
 
         </div>
@@ -106,9 +123,9 @@ session_start(); ?>
     </div>
   </section>
 
-  <h2>Join us today
-  <form method="get" action="register.php">
-  <button>Join Us</button></a>
+  <h2>Have a Question?
+  <form method="get" action="query.php">
+  <button>Ask Now</button></a>
       </form>
     </h2>
 
@@ -182,7 +199,7 @@ session_start(); ?>
 
       <form method="get" action="contactus.php">
 
-      <button>Contact us</button></a>
+      <button>Contact Us</button></a>
     </form>
 
   </section>
